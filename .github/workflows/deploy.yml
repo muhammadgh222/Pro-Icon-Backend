@@ -32,7 +32,7 @@ jobs:
         run: "npm install"
 
       - name: Build step
-        run: "server.js"
+        run: "deno run --allow-net --allow-env server.js"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
